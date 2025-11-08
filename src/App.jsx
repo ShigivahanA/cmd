@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import proposal from "../src/assets/proposal.mp4";
+import proposal from "../src/assets/proposal.mov";
 import song1 from "../src/assets/song1.mp3";
 import song2 from "../src/assets/song2.mp3";
 import song3 from "../src/assets/song3.mp3";
@@ -108,7 +108,7 @@ export default function App() {
   const gameQuestions = [
     { q: "Where did we first meet murugaa?", a: "school" },
     { q: "What’s our anniversary date lakshu? (DD/MM/YYYY)", a: "05/03/2020" },
-    { q: "What’s my favorite word for you?", a: "papa" },
+    { q: "What’s my favorite word for you?", a: "mama" },
   ];
 
   const getGreeting = () => {
@@ -191,7 +191,7 @@ export default function App() {
         setGameIndex((i) => i + 1);
         response += `\n${gameQuestions[gameIndex + 1].q}`;
       } else {
-        response += `\n------------------------------------------\n💖 Game mudinchh muru! You scored ${gameScore}/${gameQuestions.length}\n------------------------------------------`;
+        response += `\n------------------------------------------\n💖 Game mudinchh muru! Ithan un markkuuu ${gameScore}/${gameQuestions.length}\n------------------------------------------`;
         setGameMode(false);
         setGameIndex(0);
         setGameScore(0);
@@ -232,7 +232,7 @@ export default function App() {
 
         // 💬 Message Command
     else if (command === "message") {
-      response = "Do you like to say something to Shigivahan?\nDrop the message below and press Enter 💌";
+      response = "Do you like to say something to MurugalakshmiShigivahan?\nDrop the message below and press Enter 💌";
 
       setHistory((prev) => [...prev, `ms@loveos:~$ ${cmd}`, " ", ""]);
       typeWriterEffect(response, () => {
@@ -252,7 +252,7 @@ export default function App() {
   const letterContent = `
 [Decrypting hidden file: love_letter.sys 💌]
 
-My dearest Murugalakshmi Shigivahan,
+My dearest MurugalakshmiShigivahan,
 
 புரிந்துக்கொள்ளும் வரை எதையும் ரசிக்கவில்லை 
 புரிந்துக்கொண்டபின் உன்னை தவிர எதையும் ரசிக்கமுடியவில்லை 
@@ -281,7 +281,7 @@ You are my forever and always.
 அவளும் அவள் நிழலும் 
 
 Forever yours,
-Shigivahan Murugalakshmi 💗
+MurugalakshmiShigivahan  💗
 `;
 
   // 🎵 Start piano music
@@ -444,7 +444,7 @@ Shigivahan Murugalakshmi 💗
     // 💖 Credits
     else if (command === "credits") {
       response =
-        "------------------------------------------\n💗 LoveOS v3.5.4\nDeveloped by: Shigivahan Murugalakshmi\nDedicated to: Murugalakshmi Shigivahan\nSince: March 25, 2020\nPowered by: Infinite Love\n------------------------------------------";
+        "------------------------------------------\n💗 LoveOS v3.5.4\nDeveloped by: MurugalakshmiShigivahan \nDedicated to: MurugalakshmiShigivahan\nSince: March 25, 2020\nPowered by: Infinite Love\n------------------------------------------";
     }
 
     // 🎮 Game
