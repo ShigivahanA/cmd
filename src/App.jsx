@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import proposal from "../src/assets/proposal.mov";
+import proposal from "../src/assets/proposal.MOV";
 import song1 from "../src/assets/song1.mp3";
 import song2 from "../src/assets/song2.mp3";
 import song3 from "../src/assets/song3.mp3";
