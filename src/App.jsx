@@ -616,7 +616,7 @@ MurugalakshmiShigivahan  💗
             src={proposal}
             autoPlay
             playsInline
-            className="w-full max-w-3xl h-auto rounded-md object-contain"
+            className="w-full max-w-3xl h-full max-h-3xl rounded-md object-contain"
             onEnded={() => setProposalStage("question")}
           />
         )}
